@@ -20,7 +20,7 @@ export default function Formulario(props: FormularioProps) {
                     somenteLeitura
                     texto="Código"
                     valor={id}
-                    className="mb-4"/>) :
+                    className="mb-4" />) :
                 false}
             <Entrada
                 texto="Nome"
@@ -35,7 +35,7 @@ export default function Formulario(props: FormularioProps) {
             <div className="flex justify-end mt-7">
                 <Botao cor='blue' className="mr-2"
                     onClick={() => props.clienteMudou?.(new Cliente(nome, +idade, id))}>
-                    {id? 'Alterar' : 'Salvar'}
+                    {id ? 'Alterar' : 'Salvar'}
                 </Botao>
                 <Botao onClick={props.cancelado}>
                     Cancelar
